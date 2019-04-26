@@ -125,7 +125,7 @@ class ProcessOrg():
 
         ## Get the output
         stdout = p.communicate()[0]
-        return stdout
+        return stdout.decode('utf-8')
 
     '''
     Get all the children spawned
