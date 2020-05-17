@@ -12,4 +12,11 @@ release:
 	@python3 -m twine upload --skip-existing dist/*
 
 install:
-	@pip3 install --user .
+	@pip3 install --user . --upgrade
+
+clean:
+	@rm -rf __pycache__
+	@rm -rf tags
+	@rm -rf dist
+	@rm -rf build
+	@rm -rf *.egg-info
